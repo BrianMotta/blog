@@ -18,4 +18,6 @@
 #  user_id  (user_id => users.id)
 #
 class Post < ApplicationRecord
+  has_many :comments, dependent :destroy
+  #belongs_to :user
 end
